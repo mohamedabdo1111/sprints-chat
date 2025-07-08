@@ -15,14 +15,19 @@
       </div>
       <div class="chat-main">
         <div id="message-history" class="message-history"></div>
+        <div id="typing-indicator" class="typing-indicator"></div>
         <div class="message-input">
           <input
             id="message-input"
             type="text"
             placeholder="Type a message..."
           />
+          <label for="file-input" class="file-label">📎</label>
+          <input id="file-input" type="file" class="file-input" />
+          <button id="emoji-button" class="emoji-button">😊</button>
           <button id="send-button">Send</button>
         </div>
+        <div id="file-preview" class="file-preview"></div>
       </div>
     </div>
     <script src="script.js"></script>

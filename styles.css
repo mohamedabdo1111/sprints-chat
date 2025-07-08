@@ -93,6 +93,19 @@ body {
   padding-top: 60px;
 }
 
+.typing-indicator {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  display: none; /* Hidden by default */
+}
+
+body.dark .typing-indicator {
+  color: #aaaaaa; /* Adjust color for dark theme */
+}
+
 .message-input {
   display: flex;
   padding: 10px;
@@ -195,4 +208,106 @@ body.dark .message.received {
 
 body.dark .message .timestamp {
   color: #aaaaaa; /* Subtle gray for timestamps */
+}
+
+.emoji-button {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.emoji-button:hover {
+  background-color: #e0e0e0;
+}
+
+.emoji-list {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 474.5px;
+  bottom: 60px;
+  left: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.emoji-list button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.emoji-list button:hover {
+  transform: scale(1.2);
+}
+
+body.dark .emoji-list {
+  background-color: #202020;
+  border: 1px solid #444;
+}
+
+body.dark .emoji-list button {
+  color: #f5f5f5;
+}
+
+.file-input {
+  display: none; /* Hidden by default */
+}
+
+.file-label {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-label:hover {
+  background-color: #e0e0e0;
+}
+
+.file-preview {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: none; /* Hidden by default */
+}
+
+.file-preview img {
+  max-width: 100%;
+  max-height: 150px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.file-preview .file-name {
+  font-size: 14px;
+  color: #333;
+}
+
+body.dark .file-preview {
+  background-color: #202020;
+  border: 1px solid #444;
+}
+
+body.dark .file-preview .file-name {
+  color: #f5f5f5;
 }
