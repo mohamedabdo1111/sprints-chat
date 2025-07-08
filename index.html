@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+      <div id="sidebar" class="sidebar">
+        <h2>Chat Sidebar</h2>
+        <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
+      </div>
+      <div class="chat-main">
+        <div id="message-history" class="message-history"></div>
+        <div class="message-input">
+          <input
+            id="message-input"
+            type="text"
+            placeholder="Type a message..."
+          />
+          <button id="send-button">Send</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
